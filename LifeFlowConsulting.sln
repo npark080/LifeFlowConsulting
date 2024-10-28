@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeFlowConsulting.UI.MVC", "LifeFlowConsulting.UI.MVC\LifeFlowConsulting.UI.MVC.csproj", "{5889FF1E-8D02-4399-BC8A-287314875075}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeFlowConsulting.DATA.EF", "LifeFlowConsulting.DATA.EF\LifeFlowConsulting.DATA.EF.csproj", "{7D3044D4-7E99-4160-819B-31F913F45AC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5889FF1E-8D02-4399-BC8A-287314875075}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5889FF1E-8D02-4399-BC8A-287314875075}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5889FF1E-8D02-4399-BC8A-287314875075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3044D4-7E99-4160-819B-31F913F45AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3044D4-7E99-4160-819B-31F913F45AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3044D4-7E99-4160-819B-31F913F45AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3044D4-7E99-4160-819B-31F913F45AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
