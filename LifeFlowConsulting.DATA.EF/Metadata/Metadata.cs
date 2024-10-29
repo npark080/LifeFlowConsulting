@@ -21,6 +21,7 @@ namespace LifeFlowConsulting.DATA.EF.Models//.Metadata
             public string CourseName { get; set; } = null!;
 
             [Display(Name = "Course Description")]
+            [StringLength(500)]
             public string? CourseDescription { get; set; }
 
             [Display(Name = "Status")]
@@ -40,7 +41,6 @@ namespace LifeFlowConsulting.DATA.EF.Models//.Metadata
             [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
             [Display(Name = "Enrollment Date")]
             [DataType(DataType.Date)]
-            [Required]
             public DateTime EnrollmentDate { get; set; }
 
         }
@@ -67,7 +67,8 @@ namespace LifeFlowConsulting.DATA.EF.Models//.Metadata
             [Display(Name = "State")]
             public string? State { get; set; }
 
-            public int TimeZoneId { get; set; }
+            [Display(Name = "Time Zone")]
+            public int? TimeZoneId { get; set; }
 
             [Range(1_000_000_000, 9_999_999_999, ErrorMessage = "Must be 10 digits")]
             [DataType(DataType.PhoneNumber)]
@@ -90,26 +91,22 @@ namespace LifeFlowConsulting.DATA.EF.Models//.Metadata
             [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
             [Display(Name = "Start Date")]
             [DataType(DataType.Date)]
-            [Required]
-            public DateTime StartDate { get; set; }
+            public DateTime? StartDate { get; set; }
 
             [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
             [Display(Name = "End Date")]
             [DataType(DataType.Date)]
-            [Required]
-            public DateTime EndDate { get; set; }
+            public DateTime? EndDate { get; set; }
 
             [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
             [Display(Name = "Onboarding Call")]
             [DataType(DataType.Date)]
-            [Required]
-            public DateTime Onboarding { get; set; }
+            public DateTime? Onboarding { get; set; }
 
             [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
             [Display(Name = "Goals Conversation")]
             [DataType(DataType.Date)]
-            [Required]
-            public DateTime GoalsConvo { get; set; }
+            public DateTime? GoalsConvo { get; set; }
 
             [Display(Name = "Student Status")]
             public int StudentStatusId { get; set; } //foreign key, no metadata
